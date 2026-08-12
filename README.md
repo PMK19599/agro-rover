@@ -63,7 +63,7 @@ This modular architecture simplified the initial prototype development. During t
 
 ### System Architecture
 
-![Agro Rover system architecture showing movement control, environmental monitoring, and reconstructed irrigation subsystems](agro-rover-system-architecture.png)
+![Agro Rover system architecture showing movement control, environmental monitoring, and reconstructed irrigation subsystems](agro-rover-system-architecture.webp)
 
 > This diagram presents the functional system architecture. Refer to the wiring tables below for connection details.
 
