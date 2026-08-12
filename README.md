@@ -204,10 +204,14 @@ These readings are sent to Arduino IoT Cloud and summarized through its dashboar
 
 ## Team
 
-- Darshan L
-- Gagan M
-- Jayanth B S
-- Purushotham K
+| Team Member | Contribution Area |
+|---|---|
+| [Purushotham K](https://github.com/PMK19599) | System integration, project coordination, documentation, and presentation |
+| [Gagan M](https://github.com/Gagan234-M) | Rover assembly, Bluetooth movement control, and motor-system testing |
+| [Jayanth B S](https://github.com/jayanthbs24-star) | Environmental-monitoring subsystem, sensor integration, and prototype testing |
+| Darshan L | Soil-monitoring and irrigation subsystem, hardware assembly, and demonstration support |
+
+> Responsibilities reflect the primary areas handled during this student prototype. The team collaborated across hardware assembly, testing, troubleshooting, and presentation.
 
 Developed as a student agricultural-technology prototype and presented during Technisium 2026.
 
