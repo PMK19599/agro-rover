@@ -1,0 +1,12 @@
+# Private Arduino IoT Cloud credentials
+firmware/environment_monitoring/arduino_secrets.h
+
+# Arduino build outputs
+build/
+*.bin
+*.elf
+*.hex
+
+# Operating-system files
+.DS_Store
+Thumbs.db
