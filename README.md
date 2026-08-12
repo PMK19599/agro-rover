@@ -41,13 +41,18 @@ The rover can be controlled wirelessly through Bluetooth, while its ESP8266-base
 
 ## System Structure
 
-The project uses two controllers:
+The demonstrated prototype used three controllers, with each handling a separate subsystem:
 
-1. **Arduino rover controller**  
-   Receives commands through the HC-05 Bluetooth module and controls the motors using an L298N motor driver.
+1. **Arduino Uno — Rover movement**  
+   Receives commands from the HC-05 Bluetooth module and controls the motors through an L298N motor driver.
 
-2. **ESP8266 monitoring controller**  
-   Reads environmental sensor data and updates the Arduino IoT Cloud dashboard over Wi-Fi.
+2. **Arduino Uno — Soil monitoring and irrigation**  
+   Reads the soil-moisture sensor and controls the water-pump subsystem. The original firmware and exact pin assignments for this controller are no longer available.
+
+3. **NodeMCU ESP8266 — Environmental monitoring**  
+   Reads temperature, humidity, and relative air-quality data using the DHT11 and MQ-series sensors, then sends the readings to Arduino IoT Cloud over Wi-Fi.
+
+This modular architecture simplified the initial prototype development. During the project evaluation, the judges recommended consolidating the subsystems onto a single capable microcontroller to reduce wiring, size, power requirements, and debugging complexity in a future version.
 
 ## Firmware Structure
 
