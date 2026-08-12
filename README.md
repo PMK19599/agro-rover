@@ -115,6 +115,16 @@ firmware/
 │   └── arduino_secrets.example.h
 └── README.md
 ```
+### Firmware Availability
+
+The repository currently preserves firmware for:
+
+- Bluetooth-based rover movement using an Arduino Uno
+- Environmental monitoring and Arduino IoT Cloud connectivity using a NodeMCU ESP8266
+
+The demonstrated prototype also used a second Arduino Uno for soil-moisture monitoring and pump control. That controller’s original firmware was lost and is therefore not included in this repository.
+
+The irrigation wiring shown above is a reconstructed reference for future redevelopment, not a recovered copy of the original implementation.
 
 ### Bluetooth Rover Controller
 
