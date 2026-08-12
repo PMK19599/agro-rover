@@ -60,6 +60,10 @@ The demonstrated prototype used three controllers, with each handling a separate
 
 This modular architecture simplified the initial prototype development. During the project evaluation, the judges recommended consolidating the subsystems onto a single capable microcontroller to reduce wiring, size, power requirements, and debugging complexity in a future version.
 
+![Agro Rover system architecture showing movement control, environmental monitoring, and reconstructed irrigation subsystems](agro-rover-system-architecture.png)
+
+> This diagram presents the functional system architecture. Refer to the wiring tables below for connection details.
+
 ## Reference Wiring
 
 > **Important:** This wiring was reconstructed from the preserved firmware and project records. The irrigation connections are proposed and may not exactly match the original lost circuit. Verify voltage, current, polarity, and module specifications before rebuilding.
