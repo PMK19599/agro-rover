@@ -208,15 +208,21 @@ Developed as a student agricultural-technology prototype and presented during Te
 
 ## Future Improvements
 
+Based on prototype testing and feedback received during the project evaluation, future development could include:
+
+- Consolidating the three-controller architecture onto one capable microcontroller to reduce wiring, size, power consumption, and debugging complexity
+- Adding spring-based wheel suspension to improve stability and manoeuvrability on uneven agricultural terrain
 - GPS-based navigation
 - Obstacle detection and autonomous movement
 - Camera-based crop-health monitoring
 - Calibrated environmental sensors
 - Improved soil-moisture-based irrigation control
 - Solar-assisted battery charging
-- Weather-resistant mechanical enclosure
+- Weather-resistant mechanical and electronics enclosures
 - Long-range LoRa communication
-- Dedicated mobile or web dashboard
+- A dedicated mobile or web dashboard
+
+The evaluators considered the prototype promising and encouraged its continued development for practical agricultural applications.
 
 ## Attribution and License
 
