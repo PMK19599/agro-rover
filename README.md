@@ -156,9 +156,11 @@ Developed as a student agricultural-technology prototype and presented during Te
 
 ## Attribution and License
 
-The environmental-monitoring firmware and project documentation are provided under the repository’s MIT License.
+The original environmental-monitoring firmware and project documentation are provided under the repository’s MIT License.
 
-The Bluetooth rover-control firmware is adapted from a program published by Make DIY / CircuitBest. Its original notice prohibits commercial use, so that firmware file is **not covered by the repository’s MIT License**. Refer to the attribution inside the source file before reusing it.
+The Bluetooth rover-control firmware is adapted from code published by Make DIY / CircuitBest and is not covered by the repository’s MIT License.
+
+See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for its attribution and reuse restrictions.
 
 ## Disclaimer
 
