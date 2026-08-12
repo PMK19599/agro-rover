@@ -43,6 +43,7 @@ The air-quality output is a relative MQ-series sensor reading and should not be 
 | Suitable pump power supply | 1 | Powers the water pump independently |
 | Rover chassis and wheels | 1 set | Provides the prototype’s mobile platform |
 | Jumper wires and connecting hardware | As required | Connects the controllers, sensors, and modules |
+
 > Exact models and electrical ratings for some original prototype components are no longer available. Anyone rebuilding the rover should select compatible power supplies, drivers, sensors, and protection components based on the actual hardware specifications.
 
 ## System Structure
@@ -127,6 +128,7 @@ firmware/
 │   └── arduino_secrets.example.h
 └── README.md
 ```
+
 ### Firmware Availability
 
 The repository currently preserves firmware for:
