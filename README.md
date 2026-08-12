@@ -6,22 +6,24 @@ An IoT-enabled agricultural rover prototype designed for remote field movement, 
 
 ## Overview
 
-Agro Rover combines a mobile robotic platform with environmental sensors and cloud connectivity. The prototype was developed to explore how affordable electronics can assist with agricultural monitoring and reduce repeated manual field inspection.
+Agro Rover is a student-built agricultural technology prototype combining mobile field movement, soil-moisture-based irrigation, environmental sensing, and cloud monitoring.
 
-The rover can be controlled wirelessly through Bluetooth, while its ESP8266-based monitoring unit collects temperature, humidity, and relative air-quality sensor readings for display through Arduino IoT Cloud.
+The demonstrated prototype used three controllers: one Arduino Uno for Bluetooth rover movement, a second Arduino Uno for soil monitoring and pump control, and a NodeMCU ESP8266 for environmental sensing and Arduino IoT Cloud connectivity.
 
-> Agro Rover is an educational prototype. Its air-quality output is a relative sensor reading and should not be treated as a calibrated or certified AQI measurement.
+The surviving repository preserves the rover-control and environmental-monitoring firmware. The original soil-monitoring and irrigation firmware is no longer available, so that subsystem is documented using a reconstructed reference design.
+
+The air-quality output is a relative MQ-series sensor reading and should not be treated as a calibrated or certified AQI measurement.
 
 ## Key Features
 
 - Bluetooth-based rover movement control
 - Forward, backward, turning, diagonal movement, and speed control
+- Soil-moisture monitoring and automated-irrigation demonstration
 - Temperature and humidity monitoring using a DHT11 sensor
 - Relative air-quality monitoring using an MQ-series gas sensor
 - Arduino IoT Cloud dashboard integration
-- Modular Arduino and ESP8266 firmware
-- Soil-condition monitoring concept
-- Automated-irrigation demonstration
+- Three-controller modular prototype architecture
+- Reconstructed wiring documentation for future redevelopment
 
 ## Hardware Used
 
