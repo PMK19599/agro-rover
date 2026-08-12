@@ -54,6 +54,55 @@ The demonstrated prototype used three controllers, with each handling a separate
 
 This modular architecture simplified the initial prototype development. During the project evaluation, the judges recommended consolidating the subsystems onto a single capable microcontroller to reduce wiring, size, power requirements, and debugging complexity in a future version.
 
+## Reference Wiring
+
+> **Important:** This wiring was reconstructed from the preserved firmware and project records. The irrigation connections are proposed and may not exactly match the original lost circuit. Verify voltage, current, polarity, and module specifications before rebuilding.
+
+### Rover Movement — Confirmed from Firmware
+
+| Arduino Uno connection | Connected component |
+|---|---|
+| Pin `5` | L298N `IN1` |
+| Pin `6` | L298N `IN2` |
+| Pin `10` | L298N `IN3` |
+| Pin `11` | L298N `IN4` |
+| Pin `0 / RX` | HC-05 `TXD` |
+| Pin `1 / TX` | HC-05 `RXD` through a suitable voltage divider |
+| `5V` | HC-05 `VCC` |
+| `GND` | HC-05 and L298N common ground |
+| L298N `OUT1 / OUT2` | Left-side motor or motor pair |
+| L298N `OUT3 / OUT4` | Right-side motor or motor pair |
+| External motor supply | L298N motor-power input |
+
+The motors must not be powered from the Arduino Uno’s `5V` pin. Disconnecting the HC-05 from pins `0` and `1` may be necessary while uploading firmware.
+
+### Environmental Monitoring — Confirmed from Firmware
+
+| NodeMCU ESP8266 connection | Connected component |
+|---|---|
+| `D2 / GPIO4` | DHT11 data |
+| `3.3V` | DHT11 VCC |
+| `GND` | DHT11 ground |
+| `A0` | MQ-series sensor analogue output |
+| `GND` | MQ-series sensor ground |
+| USB or regulated input | NodeMCU power |
+
+The MQ module’s analogue output must remain within the supported input range of the specific NodeMCU board. Use appropriate signal conditioning or a voltage divider when required.
+
+### Soil Monitoring and Irrigation — Reconstructed Reference
+
+| Arduino Uno connection | Connected component |
+|---|---|
+| `A0` | Soil-moisture sensor analogue output |
+| `5V` | Soil-moisture sensor and relay-module VCC |
+| `GND` | Soil-moisture sensor and relay-module ground |
+| Pin `7` | Relay-module control input |
+| Relay `COM` | External pump-supply positive |
+| Relay `NO` | Pump positive |
+| External supply negative | Pump negative |
+
+Pin `7` is a proposed relay-control pin because the original irrigation firmware and wiring are unavailable. The pump must use a suitable external supply and must never be powered directly from an Arduino pin. Use a proper relay or driver module with the required protection.
+
 ## Firmware Structure
 
 ```text
