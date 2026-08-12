@@ -27,19 +27,23 @@ The air-quality output is a relative MQ-series sensor reading and should not be 
 
 ## Hardware Used
 
-| Component | Purpose |
-|---|---|
-| Arduino-compatible board | Rover movement control |
-| NodeMCU ESP8266 | Sensor processing and cloud connectivity |
-| HC-05 Bluetooth module | Wireless manual control |
-| L298N motor driver | DC motor control |
-| DC geared motors | Rover movement |
-| DHT11 sensor | Temperature and humidity monitoring |
-| MQ-series gas sensor | Relative air-quality sensing |
-| Soil-moisture sensor | Soil-condition monitoring |
-| Water pump | Irrigation demonstration |
-| Battery supply | Portable power |
-| Rover chassis and wheels | Mechanical platform |
+| Component | Quantity | Purpose |
+|---|---:|---|
+| Arduino Uno | 2 | One for rover movement and one for soil monitoring and irrigation |
+| NodeMCU ESP8266 | 1 | Wi-Fi connectivity, environmental sensing, and Arduino IoT Cloud integration |
+| L298N motor-driver module | 1 | Controls the rover’s motors |
+| HC-05 Bluetooth module | 1 | Receives movement commands from a mobile application |
+| DC geared motors | 4 | Drives the rover’s wheels |
+| DHT11 sensor | 1 | Measures temperature and relative humidity |
+| MQ-series gas-sensor module | 1 | Provides a relative air-quality reading |
+| Soil-moisture sensor | 1 | Detects soil-moisture level for the irrigation demonstration |
+| Relay or pump-driver module | 1 | Switches the water pump from the irrigation controller |
+| DC water pump | 1 | Supplies water during automated irrigation |
+| External motor power supply | 1 | Powers the motors through the L298N |
+| Suitable pump power supply | 1 | Powers the water pump independently |
+| Rover chassis and wheels | 1 set | Provides the prototype’s mobile platform |
+| Jumper wires and connecting hardware | As required | Connects the controllers, sensors, and modules |
+> Exact models and electrical ratings for some original prototype components are no longer available. Anyone rebuilding the rover should select compatible power supplies, drivers, sensors, and protection components based on the actual hardware specifications.
 
 ## System Structure
 
