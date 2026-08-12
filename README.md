@@ -1,4 +1,4 @@
-# Agro Rover
+   # Agro Rover
 
 An IoT-enabled agricultural rover prototype designed for remote field movement, environmental monitoring, and smart-farming demonstrations.
 
@@ -49,16 +49,18 @@ The air-quality output is a relative MQ-series sensor reading and should not be 
 
 The demonstrated prototype used three controllers, with each handling a separate subsystem:
 
-1. **Arduino Uno — Rover movement**  
-   Receives commands from the HC-05 Bluetooth module and controls the motors through an L298N motor driver.
+1. **Arduino Uno — Rover movement**
+   Receives commands from the HC-05 Bluetooth module and controls the four motors through an L298N motor driver.
 
-2. **Arduino Uno — Soil monitoring and irrigation**  
-   Reads the soil-moisture sensor and controls the water-pump subsystem. The original firmware and exact pin assignments for this controller are no longer available.
+2. **Arduino Uno — Soil monitoring and irrigation**
+   Monitors soil moisture and controls the water pump through a relay or suitable pump-driver module. The original firmware for this subsystem is no longer available.
 
-3. **NodeMCU ESP8266 — Environmental monitoring**  
-   Reads temperature, humidity, and relative air-quality data using the DHT11 and MQ-series sensors, then sends the readings to Arduino IoT Cloud over Wi-Fi.
+3. **NodeMCU ESP8266 — Environmental monitoring**
+   Collects temperature, humidity, and relative air-quality readings and sends the data to the Arduino IoT Cloud dashboard.
 
 This modular architecture simplified the initial prototype development. During the project evaluation, the judges recommended consolidating the subsystems onto a single capable microcontroller to reduce wiring, size, power requirements, and debugging complexity in a future version.
+
+### System Architecture
 
 ![Agro Rover system architecture showing movement control, environmental monitoring, and reconstructed irrigation subsystems](agro-rover-system-architecture.png)
 
