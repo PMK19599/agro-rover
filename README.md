@@ -206,6 +206,8 @@ These readings are sent to Arduino IoT Cloud and summarized through its dashboar
 
 ## Project Gallery
 
+>Photos and project materials from the prototype demonstration and Technisium 2026 presentation.
+
 ### Team Demonstration
 
 ![Agro Rover Team Demonstration](team-demo-1.jpeg)
