@@ -222,6 +222,8 @@ These readings are sent to Arduino IoT Cloud and summarized through its dashboar
 
 ## Team
 
+>The prototype was developed collaboratively across hardware assembly, embedded control, sensing, integration, testing, and presentation.
+
 | Team Member | Contribution Area |
 |---|---|
 | [Purushotham K](https://github.com/PMK19599) | System integration, project coordination, documentation, and presentation |
