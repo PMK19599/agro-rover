@@ -20,16 +20,6 @@ Agro Rover was developed as a modular agricultural-technology prototype for demo
 
 > **Important:** This repository preserves the surviving rover-control and environmental-monitoring firmware. The original soil-monitoring and irrigation firmware is no longer available, so that subsystem is documented using a reconstructed reference design. The MQ-series output is a relative sensor reading and should not be treated as a calibrated or certified AQI measurement.
 
-## Overview
-
-Agro Rover is a student-built agricultural technology prototype combining mobile field movement, soil-moisture-based irrigation, environmental sensing, and cloud monitoring.
-
-The demonstrated prototype used three controllers: one Arduino Uno for Bluetooth rover movement, a second Arduino Uno for soil monitoring and pump control, and a NodeMCU ESP8266 for environmental sensing and Arduino IoT Cloud connectivity.
-
-The surviving repository preserves the rover-control and environmental-monitoring firmware. The original soil-monitoring and irrigation firmware is no longer available, so that subsystem is documented using a reconstructed reference design.
-
-The air-quality output is a relative MQ-series sensor reading and should not be treated as a calibrated or certified AQI measurement.
-
 ## Key Features
 
 - Bluetooth-based rover movement control
