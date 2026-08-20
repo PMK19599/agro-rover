@@ -130,6 +130,8 @@ Pin `7` is a proposed relay-control pin because the original irrigation firmware
 
 ## Firmware Structure
 
+>The repository preserves the firmware that was recovered from the working prototype; the original irrigation-controller firmware is not available.
+
 ```text
 firmware/
 ├── bluetooth_rover_control/
