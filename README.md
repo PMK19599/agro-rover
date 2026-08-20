@@ -46,6 +46,14 @@ The demonstrated prototype used three controllers, with each handling a separate
 
 This modular architecture simplified the initial prototype development. During the project evaluation, the judges recommended consolidating the subsystems onto a single capable microcontroller to reduce wiring, size, power requirements, and debugging complexity in a future version.
 
+### System Architecture
+
+>The prototype separates movement, irrigation, and environmental monitoring into three controller-based subsystems, with the ESP8266 providing cloud connectivity for environmental data.
+
+![Agro Rover system architecture showing movement control, environmental monitoring, and reconstructed irrigation subsystems](agro-rover-system-architecture.webp)
+
+> This diagram presents the functional system architecture. Refer to the wiring tables below for connection details.
+
 ## Hardware Used
 
 >The hardware is distributed across three controllers, with each controller responsible for a dedicated subsystem of the prototype.
@@ -68,14 +76,6 @@ This modular architecture simplified the initial prototype development. During t
 | Jumper wires and connecting hardware | As required | Connects the controllers, sensors, and modules |
 
 > Exact models and electrical ratings for some original prototype components are no longer available. Anyone rebuilding the rover should select compatible power supplies, drivers, sensors, and protection components based on the actual hardware specifications.
-
-### System Architecture
-
->The prototype separates movement, irrigation, and environmental monitoring into three controller-based subsystems, with the ESP8266 providing cloud connectivity for environmental data.
-
-![Agro Rover system architecture showing movement control, environmental monitoring, and reconstructed irrigation subsystems](agro-rover-system-architecture.webp)
-
-> This diagram presents the functional system architecture. Refer to the wiring tables below for connection details.
 
 ## Reference Wiring
 
