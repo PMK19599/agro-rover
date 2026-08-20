@@ -79,6 +79,8 @@ This modular architecture simplified the initial prototype development. During t
 
 ## Reference Wiring
 
+>The wiring documentation separates connections confirmed from the surviving firmware from connections reconstructed from project records.
+
 > **Important:** This wiring was reconstructed from the preserved firmware and project records. The irrigation connections are proposed and may not exactly match the original lost circuit. Verify voltage, current, polarity, and module specifications before rebuilding.
 
 ### Rover Movement — Confirmed from Firmware
