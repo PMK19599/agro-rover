@@ -69,6 +69,8 @@ This modular architecture simplified the initial prototype development. During t
 
 ### System Architecture
 
+>The prototype separates movement, irrigation, and environmental monitoring into three controller-based subsystems, with the ESP8266 providing cloud connectivity for environmental data.
+
 ![Agro Rover system architecture showing movement control, environmental monitoring, and reconstructed irrigation subsystems](agro-rover-system-architecture.webp)
 
 > This diagram presents the functional system architecture. Refer to the wiring tables below for connection details.
