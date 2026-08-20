@@ -31,6 +31,21 @@ Agro Rover was developed as a modular agricultural-technology prototype for demo
 - Three-controller modular prototype architecture
 - Reconstructed wiring documentation for future redevelopment
 
+## System Structure
+
+The demonstrated prototype used three controllers, with each handling a separate subsystem:
+
+1. **Arduino Uno — Rover movement**
+   Receives commands from the HC-05 Bluetooth module and controls the four motors through an L298N motor driver.
+
+2. **Arduino Uno — Soil monitoring and irrigation**
+   Monitors soil moisture and controls the water pump through a relay or suitable pump-driver module. The original firmware for this subsystem is no longer available.
+
+3. **NodeMCU ESP8266 — Environmental monitoring**
+   Collects temperature, humidity, and relative air-quality readings and sends the data to the Arduino IoT Cloud dashboard.
+
+This modular architecture simplified the initial prototype development. During the project evaluation, the judges recommended consolidating the subsystems onto a single capable microcontroller to reduce wiring, size, power requirements, and debugging complexity in a future version.
+
 ## Hardware Used
 
 | Component | Quantity | Purpose |
@@ -51,21 +66,6 @@ Agro Rover was developed as a modular agricultural-technology prototype for demo
 | Jumper wires and connecting hardware | As required | Connects the controllers, sensors, and modules |
 
 > Exact models and electrical ratings for some original prototype components are no longer available. Anyone rebuilding the rover should select compatible power supplies, drivers, sensors, and protection components based on the actual hardware specifications.
-
-## System Structure
-
-The demonstrated prototype used three controllers, with each handling a separate subsystem:
-
-1. **Arduino Uno — Rover movement**
-   Receives commands from the HC-05 Bluetooth module and controls the four motors through an L298N motor driver.
-
-2. **Arduino Uno — Soil monitoring and irrigation**
-   Monitors soil moisture and controls the water pump through a relay or suitable pump-driver module. The original firmware for this subsystem is no longer available.
-
-3. **NodeMCU ESP8266 — Environmental monitoring**
-   Collects temperature, humidity, and relative air-quality readings and sends the data to the Arduino IoT Cloud dashboard.
-
-This modular architecture simplified the initial prototype development. During the project evaluation, the judges recommended consolidating the subsystems onto a single capable microcontroller to reduce wiring, size, power requirements, and debugging complexity in a future version.
 
 ### System Architecture
 
