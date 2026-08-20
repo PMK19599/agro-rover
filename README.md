@@ -48,7 +48,7 @@ This modular architecture simplified the initial prototype development. During t
 
 ### System Architecture
 
->The prototype separates movement, irrigation, and environmental monitoring into three controller-based subsystems, with the ESP8266 providing cloud connectivity for environmental data.
+> The prototype separates movement, irrigation, and environmental monitoring into three controller-based subsystems, with the ESP8266 providing cloud connectivity for environmental data.
 
 ![Agro Rover system architecture showing movement control, environmental monitoring, and reconstructed irrigation subsystems](agro-rover-system-architecture.webp)
 
@@ -56,7 +56,7 @@ This modular architecture simplified the initial prototype development. During t
 
 ## Hardware Used
 
->The hardware is distributed across three controllers, with each controller responsible for a dedicated subsystem of the prototype.
+> The hardware is distributed across three controllers, with each controller responsible for a dedicated subsystem of the prototype.
 
 | Component | Quantity | Purpose |
 |---|---:|---|
@@ -79,7 +79,7 @@ This modular architecture simplified the initial prototype development. During t
 
 ## Reference Wiring
 
->The wiring documentation separates connections confirmed from the surviving firmware from connections reconstructed from project records.
+> The wiring documentation separates connections confirmed from the surviving firmware from connections reconstructed from project records.
 
 > **Important:** This wiring was reconstructed from the preserved firmware and project records. The irrigation connections are proposed and may not exactly match the original lost circuit. Verify voltage, current, polarity, and module specifications before rebuilding.
 
@@ -130,7 +130,7 @@ Pin `7` is a proposed relay-control pin because the original irrigation firmware
 
 ## Firmware Structure
 
->The repository preserves the firmware that was recovered from the working prototype; the original irrigation-controller firmware is not available.
+> The repository preserves the firmware that was recovered from the working prototype; the original irrigation-controller firmware is not available.
 
 ```text
 firmware/
@@ -184,7 +184,7 @@ These readings are sent to Arduino IoT Cloud and summarized through its dashboar
 
 ## Arduino IoT Cloud Setup
 
->The ESP8266 uses Arduino IoT Cloud to publish environmental readings from the prototype to a remote dashboard.
+> The ESP8266 uses Arduino IoT Cloud to publish environmental readings from the prototype to a remote dashboard.
 
 1. Create a Thing in Arduino IoT Cloud.
 2. Add variables named:
@@ -206,7 +206,7 @@ These readings are sent to Arduino IoT Cloud and summarized through its dashboar
 
 ## Project Gallery
 
->Photos and project materials from the prototype demonstration and Technisium 2026 presentation.
+> Photos and project materials from the prototype demonstration and Technisium 2026 presentation.
 
 ### Team Demonstration
 
@@ -222,7 +222,7 @@ These readings are sent to Arduino IoT Cloud and summarized through its dashboar
 
 ## Team
 
->The prototype was developed collaboratively across hardware assembly, embedded control, sensing, integration, testing, and presentation.
+> The prototype was developed collaboratively across hardware assembly, embedded control, sensing, integration, testing, and presentation.
 
 | Team Member | Contribution Area |
 |---|---|
@@ -237,7 +237,7 @@ Developed as a student agricultural-technology prototype and presented during Te
 
 ## Current Limitations
 
->These limitations reflect the prototype’s current demonstration-stage maturity and define the main areas for future engineering work.
+> These limitations reflect the prototype’s current demonstration-stage maturity and define the main areas for future engineering work.
 
 - The rover requires manual Bluetooth control.
 - The DHT11 provides basic environmental readings with limited accuracy.
@@ -248,7 +248,7 @@ Developed as a student agricultural-technology prototype and presented during Te
 
 ## Future Improvements
 
->These improvements build on prototype testing, evaluator feedback, and the practical limitations identified during development.
+> These improvements build on prototype testing, evaluator feedback, and the practical limitations identified during development.
 
 Based on prototype testing and feedback received during the project evaluation, future development could include:
 
