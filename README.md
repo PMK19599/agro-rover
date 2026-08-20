@@ -184,6 +184,8 @@ These readings are sent to Arduino IoT Cloud and summarized through its dashboar
 
 ## Arduino IoT Cloud Setup
 
+>The ESP8266 uses Arduino IoT Cloud to publish environmental readings from the prototype to a remote dashboard.
+
 1. Create a Thing in Arduino IoT Cloud.
 2. Add variables named:
    - `message`
