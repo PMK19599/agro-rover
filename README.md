@@ -48,6 +48,8 @@ This modular architecture simplified the initial prototype development. During t
 
 ## Hardware Used
 
+>The hardware is distributed across three controllers, with each controller responsible for a dedicated subsystem of the prototype.
+
 | Component | Quantity | Purpose |
 |---|---:|---|
 | Arduino Uno | 2 | One for rover movement and one for soil monitoring and irrigation |
