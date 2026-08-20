@@ -237,6 +237,8 @@ Developed as a student agricultural-technology prototype and presented during Te
 
 ## Current Limitations
 
+>These limitations reflect the prototype’s current demonstration-stage maturity and define the main areas for future engineering work.
+
 - The rover requires manual Bluetooth control.
 - The DHT11 provides basic environmental readings with limited accuracy.
 - The gas sensor has not been calibrated for certified AQI measurement.
