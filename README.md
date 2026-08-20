@@ -248,6 +248,8 @@ Developed as a student agricultural-technology prototype and presented during Te
 
 ## Future Improvements
 
+>These improvements build on prototype testing, evaluator feedback, and the practical limitations identified during development.
+
 Based on prototype testing and feedback received during the project evaluation, future development could include:
 
 - Consolidating the three-controller architecture onto one capable microcontroller to reduce wiring, size, power consumption, and debugging complexity
